@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFood">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Add a new dish to your menu"
+           android:fontFamily="@font/gotham"
+           android:textStyle="bold"
+           android:textSize="23dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="170dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:id="@+id/lay1"
+        android:gravity="center">
+
+
+    <EditText
+
+        android:id="@+id/namefood"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+
+        android:hint="Food name"
+
+        android:inputType="textPersonName"
+
+         />
+
+    <EditText
+        android:id="@+id/decfood"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textPersonName"
+
+       />
+
+    <EditText
+        android:id="@+id/pricefood"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+
+
+        android:inputType="number"
+        android:hint="Price"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+
+
+
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/epbtnupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/capsule3"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/epbtncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/capsule3"
+            android:text="Cancel" />
+    </LinearLayout>
+</RelativeLayout>
